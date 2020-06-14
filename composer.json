@@ -16,8 +16,17 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/admin_toolbar": "^2.2",
+        "drupal/components": "^1.1",
         "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8",
+        "drupal/crop": "^2.1",
+        "drupal/devel": "^2.1",
+        "drupal/focal_point": "^1.4",
+        "drupal/paragraphs": "^1.12",
+        "drupal/token": "^1.7",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/viewsreference": "^1.4"
     },
     "conflict": {
         "drupal/drupal": "*"
