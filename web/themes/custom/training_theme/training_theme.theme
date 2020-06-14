@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the training_theme theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function training_theme_preprocess_html(array &$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function training_theme_preprocess_page(array &$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_form().
+ */
+function training_theme_preprocess_form(array &$variables) {
+
+}
