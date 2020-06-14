@@ -39,6 +39,7 @@ libraries-override:
 # The "libraries:" section will add a library to _all_ pages.
 libraries:
   - training_theme/global
+  - training_theme/webfonts
   # Example adding the webfonts library to every page.
   # See training_theme.libraries.yml for more info.
   #- training_theme/webfonts

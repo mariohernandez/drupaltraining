@@ -5,6 +5,6 @@ if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('
   include $app_root . '/' . $site_path . '/settings.ddev.php';
 }
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php') && getenv('IS_DDEV_PROJECT') == 'true') {
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }

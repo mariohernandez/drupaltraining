@@ -53,3 +53,8 @@ tabs:
   css:
     component:
       dist/css/tabs.css: {}
+
+webfonts:
+  css:
+    base:
+      'https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300;1,400&display=swap': { type: external, minified: true }
