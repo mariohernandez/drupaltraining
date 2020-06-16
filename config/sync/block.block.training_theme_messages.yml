@@ -1,0 +1,22 @@
+uuid: 5b3f388e-5f77-47f9-baec-7fdf69d395f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - training_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: training_theme_messages
+theme: training_theme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
