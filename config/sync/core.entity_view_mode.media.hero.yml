@@ -1,0 +1,10 @@
+uuid: 94eda260-a49e-482c-b0f2-990a76ac872f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.hero
+label: Hero
+targetEntityType: media
+cache: true

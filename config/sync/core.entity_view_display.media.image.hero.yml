@@ -1,0 +1,32 @@
+uuid: 89cd1b28-7364-4d5f-bcb5-c89a6bd67a69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.hero
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.hero
+  module:
+    - responsive_image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.hero
+targetEntityType: media
+bundle: image
+mode: hero
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,15 @@
+uuid: eb27f259-7b70-4e6b-b654-d731cd42c0a1
+langcode: en
+status: true
+dependencies: {  }
+name: hero_smallest
+label: 'Hero smallest'
+effects:
+  eddf10e2-800d-48f6-89e5-5e04c82d1431:
+    uuid: eddf10e2-800d-48f6-89e5-5e04c82d1431
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 350
+      anchor: center-bottom
