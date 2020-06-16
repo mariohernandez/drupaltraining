@@ -3,16 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_blog_articles_list
     - field.field.node.homepage.field_hero
     - node.type.homepage
   module:
     - entity_reference_revisions
     - user
+    - viewsreference
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
 mode: default
 content:
+  field_blog_articles_list:
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
   field_hero:
     type: entity_reference_revisions_entity_view
     weight: 0
@@ -22,9 +33,5 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  links:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

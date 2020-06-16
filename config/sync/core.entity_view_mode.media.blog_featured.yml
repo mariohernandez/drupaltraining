@@ -1,0 +1,10 @@
+uuid: 67110f3e-c2a0-4573-9b77-dad400674f04
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.blog_featured
+label: 'Blog featured'
+targetEntityType: media
+cache: true

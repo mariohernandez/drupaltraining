@@ -1,0 +1,15 @@
+uuid: 7bdf54f3-7e64-4d9e-a6bd-471261369e22
+langcode: en
+status: true
+dependencies: {  }
+name: 2_3_medium_400x520
+label: '2:3 Medium 400x520'
+effects:
+  7895bf0d-2275-40c6-a13c-cbfed8e2e34a:
+    uuid: 7895bf0d-2275-40c6-a13c-cbfed8e2e34a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 520
+      anchor: center-center

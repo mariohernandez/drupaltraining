@@ -1,9 +1,9 @@
-uuid: 549ccc73-fc73-40cd-b19a-2192edbdd64a
+uuid: 35ca721f-c2eb-4a2d-8f45-5c9679fa8f3a
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.full
     - field.field.node.blog.body
     - field.field.node.blog.field_author
     - field.field.node.blog.field_blog_image
@@ -12,37 +12,42 @@ dependencies:
   module:
     - text
     - user
-id: node.blog.teaser
+id: node.blog.full
 targetEntityType: node
 bundle: blog
-mode: teaser
+mode: full
 content:
   body:
     label: hidden
-    type: text_trimmed
-    weight: 1
-    settings:
-      trim_length: 160
+    type: text_default
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
+    region: content
+  field_author:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_blog_image:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
+    weight: 1
     label: hidden
     settings:
-      view_mode: blog_teaser
+      view_mode: blog_full
       link: false
     third_party_settings: {  }
+    region: content
   field_blog_tags:
-    type: entity_reference_entity_view
-    weight: 2
-    region: content
+    weight: 3
     label: hidden
     settings:
-      view_mode: blog
-      link: false
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
+    region: content
 hidden:
-  field_author: true
   links: true

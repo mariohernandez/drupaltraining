@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_blog_articles_list
     - field.field.node.homepage.field_hero
     - node.type.homepage
   module:
     - paragraphs
     - path
+    - viewsreference
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
@@ -19,6 +21,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_blog_articles_list:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
   field_hero:
     type: paragraphs
     weight: 1

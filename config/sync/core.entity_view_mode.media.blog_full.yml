@@ -1,0 +1,10 @@
+uuid: 3b62ac57-9ef9-47c3-8176-3fef6e974f8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.blog_full
+label: 'Blog full'
+targetEntityType: media
+cache: true

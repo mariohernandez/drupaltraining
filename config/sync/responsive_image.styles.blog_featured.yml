@@ -1,0 +1,21 @@
+uuid: fa2d33bc-7c84-444a-b197-c7f74ff7211d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.2_3_medium_400x520
+    - image.style.2_3_small_200x260
+id: blog_featured
+label: 'Blog Featured'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 25vw
+      sizes_image_styles:
+        - 2_3_medium_400x520
+        - 2_3_small_200x260
+breakpoint_group: responsive_image
+fallback_image_style: 2_3_small_200x260

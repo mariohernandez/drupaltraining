@@ -1,0 +1,10 @@
+uuid: 396f822c-20f8-4dfe-b0e6-db009fa221a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.blog
+label: Blog
+targetEntityType: taxonomy_term
+cache: true

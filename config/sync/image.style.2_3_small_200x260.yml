@@ -1,0 +1,15 @@
+uuid: 8d2e12e0-9f8c-46f8-b9fc-2d2c65d555d5
+langcode: en
+status: true
+dependencies: {  }
+name: 2_3_small_200x260
+label: '2:3 Small 200x260'
+effects:
+  f94ea951-e33b-4d8a-b82c-4d4b919fd819:
+    uuid: f94ea951-e33b-4d8a-b82c-4d4b919fd819
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 260
+      anchor: center-center

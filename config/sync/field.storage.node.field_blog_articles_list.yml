@@ -1,0 +1,21 @@
+uuid: da37cbf6-e4b4-4bf4-863c-0aafce51de5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_blog_articles_list
+field_name: field_blog_articles_list
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
