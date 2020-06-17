@@ -19,3 +19,6 @@
 
 # Ignore .DS_Store
 .DS_Store*
+
+# DDev's snapshot directory.
+/.ddev/db_snapshots/
