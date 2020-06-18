@@ -23,3 +23,6 @@
 
 # DDev's snapshot directory.
 /.ddev/db_snapshots/
+
+# DDev's personal config.local.yaml
+/.ddev/config.local.yaml
