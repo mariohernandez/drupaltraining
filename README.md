@@ -56,7 +56,7 @@ ddev npm run watch
 ```
 ddev poweroff
 ```
-_Stop start DDev if not longer using_.
+_Stop DDev if not longer using_.
 
 ```
 ddev start
