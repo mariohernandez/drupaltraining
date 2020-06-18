@@ -165,3 +165,8 @@ if (defined('CONFIG_SYNC_DIRECTORY') && empty($config_directories[CONFIG_SYNC_DI
 elseif (empty($settings['config_sync_directory'])) {
   $settings['config_sync_directory'] = '../config/sync';
 }
+
+$settings['file_scan_ignore_directories'] = [
+  'node_modules',
+  'bower_components',
+];
