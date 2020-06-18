@@ -18,5 +18,6 @@ hooks:
     - exec: /var/www/html/db/import-db.sh
     - exec: drush cim -y
     - exec: drush updb
+    - exec-host: cp -rf web/sites/example.development.services.yml web/sites/development.services.yml
     - exec: drush cr
     - exec-host: open http://training.ddev.site/user
