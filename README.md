@@ -53,17 +53,20 @@ ddev npm run watch
 ```
 
 ## Interacting with DDev
-* Stop start DDev
 ```
 ddev poweroff
 ```
+_Stop start DDev if not longer using_.
+
 ```
 ddev start
 ```
+_Start DDev to work on project_.
+
 ```
 ddev delete --omit-snapshot --yes
 ```
-_This will wipe everything out including database.  Use `ddev start` to rebuild project from scratch_.
+_If project is no longer needed, this will wipe everything out including database.  Use `ddev start` to rebuild project from scratch_.
 
 ### Running Drush commands
 ```
