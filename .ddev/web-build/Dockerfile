@@ -11,5 +11,7 @@ RUN echo "source $NVM_DIR/nvm.sh" >>/etc/profile
 RUN bash -ic "nvm install $NODE_DEFAULT_VERSION && nvm use $NODE_DEFAULT_VERSION"
 RUN chmod -R ugo+w $NVM_DIR
 
+RUN npm install gulp-cli -g
+
 # Example of how to add other tools to an image.
 # https://stackoverflow.com/questions/58415512/how-can-i-add-and-use-nvm-in-a-ddev-web-container/61934500#61934500
