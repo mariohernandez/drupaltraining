@@ -27,7 +27,8 @@
         "drupal/paragraphs": "^1.12",
         "drupal/token": "^1.7",
         "drupal/twig_field_value": "^2.0",
-        "drupal/viewsreference": "^1.4"
+        "drupal/viewsreference": "^1.4",
+        "drush/drush": "^10.3"
     },
     "conflict": {
         "drupal/drupal": "*"
