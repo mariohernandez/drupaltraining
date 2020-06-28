@@ -4,5 +4,5 @@
 if ! mysql -e 'SELECT * FROM node__field_hero;' db 2>/dev/null; then
   echo 'Importing the database'
   # Provide path to custom database.
-  gzip -dc /var/www/html/db/db.sql.gz | mysql db
+  gzip -dc /var/www/html/db/drupaltraining.sql.gz | mysql db
 fi
