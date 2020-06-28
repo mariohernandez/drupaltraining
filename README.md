@@ -9,6 +9,8 @@ git clone git@github.com:mariohernandez/drupaltraining.git
 ```
 
 ### Build the project:
+Ensure Docker is running before proceeding.
+
 ```
 cd drupaltraining
 ```
