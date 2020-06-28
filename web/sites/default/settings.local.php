@@ -156,16 +156,14 @@ $settings['skip_permissions_hardening'] = TRUE;
 
 // This specifies the default configuration sync directory.
 // This overrides any settings in settings.ddev.php.
-// $config_directories (pre-Drupal 8.8) and
-// $settings['config_sync_directory'] are supported
-// so it should work on any Drupal 8 or 9 version.
-if (defined('CONFIG_SYNC_DIRECTORY') && empty($config_directories[CONFIG_SYNC_DIRECTORY])) {
-  $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
-}
-elseif (empty($settings['config_sync_directory'])) {
+// $settings['config_sync_directory'] should work
+// on any Drupal 8 or 9 version.
+if (empty($settings['config_sync_directory'])) {
   $settings['config_sync_directory'] = '../config/sync';
 }
 
+// Ignoring these directories so Drupal never looks in them
+// when looking for twig templates.  Doing so crashes Drupal.
 $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
