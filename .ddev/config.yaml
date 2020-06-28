@@ -20,4 +20,4 @@ hooks:
     - exec: drush updb -y
     - exec-host: cp -rf web/sites/example.development.services.yml web/sites/development.services.yml
     - exec: drush cr
-    - exec-host: ddev launch
+    - exec-host: ddev launch /user
