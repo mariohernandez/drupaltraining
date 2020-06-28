@@ -5,12 +5,12 @@ An automated DDEV-based Drupal development environment.
 
 ### Clone the repo:
 ```
-git clone git@github.com:mariohernandez/drupal_training.git
+git clone git@github.com:mariohernandez/drupaltraining.git
 ```
 
 ### Build the project:
 ```
-cd drupal_training
+cd drupaltraining
 ```
 
 ```
