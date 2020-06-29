@@ -1,4 +1,4 @@
-uuid: 7cb1ae0d-105b-4223-b914-458dea64fd05
+uuid: 92d13fa2-2eeb-4bdd-980f-316c5b651b19
 langcode: en
 status: false
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: training_theme_tools
 theme: training_theme
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

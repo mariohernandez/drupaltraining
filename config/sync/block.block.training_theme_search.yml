@@ -1,4 +1,4 @@
-uuid: 5174c4d2-5fdf-4b26-bad7-b29d71da15c8
+uuid: 4a503c55-0a9e-47bc-9419-b9c34ef64c59
 langcode: en
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: training_theme_search
 theme: training_theme
 region: header
-weight: -1
+weight: -2
 provider: null
 plugin: search_form_block
 settings:

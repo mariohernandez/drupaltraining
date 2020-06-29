@@ -26,6 +26,7 @@
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/focal_point": "^1.4",
         "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
         "drupal/token": "^1.7",
         "drupal/twig_field_value": "^2.0",
         "drupal/viewsreference": "^1.4",

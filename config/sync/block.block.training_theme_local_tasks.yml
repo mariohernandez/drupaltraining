@@ -1,4 +1,4 @@
-uuid: 829beb38-388a-45d1-ba8c-4b18134073d3
+uuid: 2cd3f6b7-34b7-4704-a8b6-d7ae27444938
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: training_theme_local_tasks
 theme: training_theme
 region: content
-weight: -40
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

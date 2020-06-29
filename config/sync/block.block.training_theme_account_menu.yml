@@ -1,4 +1,4 @@
-uuid: 6e18217b-0b1c-4255-91e1-5f116c47b3bc
+uuid: a515833f-5a17-4013-a3ed-a1e5a25c955f
 langcode: en
 status: false
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: training_theme_account_menu
 theme: training_theme
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:

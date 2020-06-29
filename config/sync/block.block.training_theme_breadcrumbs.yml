@@ -1,4 +1,4 @@
-uuid: 325bbfb3-f33b-4701-8bb4-cf3d43a06926
+uuid: e69520d5-08ad-4ecf-a903-12b39db495c7
 langcode: en
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: training_theme_breadcrumbs
 theme: training_theme
 region: header
-weight: 0
+weight: -1
 provider: null
 plugin: system_breadcrumb_block
 settings:

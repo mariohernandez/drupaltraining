@@ -1,6 +1,6 @@
-uuid: c73e6787-19eb-4bd1-8802-9d45112a8875
+uuid: e55b1424-0ba1-46b1-8cea-daa4887c2dce
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: training_theme_footer
 theme: training_theme
-region: header
-weight: 0
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

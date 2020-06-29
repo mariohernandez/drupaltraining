@@ -12,4 +12,4 @@ effects:
     data:
       width: 1900
       height: 700
-      anchor: center-bottom
+      anchor: center-top

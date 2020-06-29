@@ -1,4 +1,4 @@
-uuid: 0f1b8f3b-3e2c-477d-8f20-5bceff27f7ea
+uuid: 71ad42a3-a8ca-4af9-ad06-eecf4d2f52b8
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: training_theme_local_actions
 theme: training_theme
 region: content
-weight: -20
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

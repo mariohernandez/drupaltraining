@@ -1,4 +1,4 @@
-uuid: 731acaad-6af9-4812-890e-32efdf0add3d
+uuid: 5ed88feb-27a4-40d6-bd88-5e922d72c9bd
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: training_theme_help
 theme: training_theme
 region: content
-weight: -30
+weight: -5
 provider: null
 plugin: help_block
 settings:

@@ -1,4 +1,4 @@
-uuid: fd76e2a6-eefc-40c6-a8de-869b8024ca9b
+uuid: fe26b069-83ef-496b-9efe-5b663d9e7812
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: training_theme_main_menu
 theme: training_theme
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -1,4 +1,4 @@
-uuid: 5b3f388e-5f77-47f9-baec-7fdf69d395f0
+uuid: c6fb2ad0-5779-47d1-a0de-ecdacb7bdc8a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: training_theme_messages
 theme: training_theme
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

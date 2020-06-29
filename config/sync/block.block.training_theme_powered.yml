@@ -1,6 +1,6 @@
-uuid: 2c53cac6-8bd6-45e3-b936-7693de022da2
+uuid: 9a31aec7-0725-48e0-8268-28273cc7626f
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: training_theme_powered
 theme: training_theme
-region: header
-weight: 10
+region: footer
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

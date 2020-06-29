@@ -19,5 +19,6 @@ hooks:
     - exec: drush cim -y
     - exec: drush updb -y
     - exec-host: cp -rf web/sites/example.development.services.yml web/sites/development.services.yml
+    - exec-host: cp -rf web/assets/images/* web/sites/default/files/images/
     - exec: drush cr
     - exec-host: ddev launch /user

@@ -1,4 +1,4 @@
-uuid: 10bc2198-2438-4c0b-bc59-b1302080bc2d
+uuid: 00ea2ca5-9299-424a-8f6e-437258cd5ccf
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: training_theme_branding
 theme: training_theme
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

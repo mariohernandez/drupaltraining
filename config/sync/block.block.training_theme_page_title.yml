@@ -1,4 +1,4 @@
-uuid: 8a5415ee-54a8-47a9-bc76-db429c8eca5a
+uuid: 05441551-bbad-4617-909d-c96470680c20
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: training_theme_page_title
 theme: training_theme
 region: content
-weight: -50
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
