@@ -1,0 +1,383 @@
+# Demonstration content for interrelated imports.
+---
+# Add taxonomy terms to be referenced from later content.
+# All top-level array items must be separate entities for import.
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Sports"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Fashion"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Nature"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Health"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Outdoors"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "City"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Downtown"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "People"
+- entity: "taxonomy_term"
+  vid: "tags"
+  name: "Office"
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "The beauty of nature"
+  # Assumes Pathauto is installed.
+  path:
+    - pathauto: 0
+      alias: '/blog/the-beauty-of-nature'
+  status: 1
+  body:
+    # The format may be the machine name of any configured text filter.
+    - format: "full_html"
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  # Since the tags to be used were created above, we don't know their IDs and have to look them up dynamically.
+  field_blog_tags:
+    # This is done via a preprocessor.
+    - '#process':
+        # First we designate the processor callback to be used.
+        callback: 'reference'
+        # Each callback may require a set of arguments to configure its behavior.
+        args:
+          # Indicate the machine name of the entity type to be referenced.
+          - 'taxonomy_term'
+          # Provide a list of conditions to filter the content matches.
+          # Each property filter maps directly to an EntityQuery condition.
+          - vid: 'tags'
+            name: 'Nature'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Outdoors'
+  field_blog_image:
+    - '#process':
+        args:
+          # Our first argument is, again, the bundle of the entity type.
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'tree.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "Crossing the bridge"
+  path:
+    - pathauto: 0
+      alias: '/blog/crossing-the-bridge'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Nature'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Outdoors'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'bridge.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "Find the best spots around the city"
+  path:
+    - pathauto: 0
+      alias: '/blog/around-the-city'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'City'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Downtown'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'city.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "How to stay healthy around crowds"
+  path:
+    - pathauto: 0
+      alias: '/blog/staying-healthy'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'People'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Health'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'crowd.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "Enjoying the color"
+  path:
+    - pathauto: 0
+      alias: '/blog/enjoying-the-color'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Nature'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'frog.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "The colors of nature"
+  path:
+    - pathauto: 0
+      alias: '/blog/colors-of-nature'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Nature'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Outdoors'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          - filename: 'leaves.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "Working together"
+  path:
+    - pathauto: 0
+      alias: '/blog/working-together'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Office'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'People'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          - filename: 'office.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "Jump around"
+  path:
+    - pathauto: 0
+      alias: '/blog/jump-around'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'People'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          - filename: 'people.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "The stripes"
+  path:
+    - pathauto: 0
+      alias: '/blog/stripes'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Nature'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          - filename: 'tiger.jpg'
+
+# Add a blog post.
+- entity: "node"
+  type: "blog"
+  title: "Life in the office"
+  path:
+    - pathauto: 0
+      alias: '/blog/life-in-the-office'
+  status: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+        voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+        perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+        ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+        interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  field_blog_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Office'
+  field_blog_image:
+    - '#process':
+        args:
+          - 'image'
+          - filename: 'office.jpg'
