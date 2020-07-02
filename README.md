@@ -53,10 +53,19 @@ ddev npm run build
 * This command builds the entire codebase for the theme.
 * If you encountered npm errors, run `ddev npm rebuild node-sass`, and try the build command again.
 
+### Clear Drupal caches
+To ensure Drupal is able to access all the theme's assets after building the
+theme above, clear Drupal's caches.
+```bash
+ddev drush cr
+```
+
+### Run the watch task to access Pattern Lab
 ```bash
 ddev npm run watch
 ```
-* This command compiles the codebase and it remains running to watch for new changes, then automatically compiles them.
+* In addition to compiling the theme, this tasks stays running to watch for new code changes within the theme, then automatically compiles them.
+* While the watch task is running, you can access Pattern Lab by going to `https://drupaltraining.ddev.site:3000`, or port 3001 if using `http`.
 
 ## Interacting with DDev
 Official <a target="_blank" href="https://ddev.readthedocs.io/en/stable/">DDEV-Local docs</a>.
