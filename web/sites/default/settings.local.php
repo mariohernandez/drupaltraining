@@ -162,9 +162,19 @@ if (empty($settings['config_sync_directory'])) {
   $settings['config_sync_directory'] = '../config/sync';
 }
 
-// Ignoring these directories so Drupal never looks in them
-// when looking for twig templates.  Doing so crashes Drupal.
-$settings['file_scan_ignore_directories'] = [
-  'node_modules',
-  'bower_components',
-];
+/**
+ * The default list of directories that will be ignored by Drupal's file API.
+ *
+ * By default ignore node_modules and bower_components folders to avoid issues
+ * with common frontend tools and recursive scanning of directories looking for
+ * extensions.
+ *
+ * @see file_scan_directory()
+ * @see \Drupal\Core\Extension\ExtensionDiscovery::scanDirectory()
+ */
+if (empty($settings['file_scan_ignore_directories'])) {
+  $settings['file_scan_ignore_directories'] = [
+    'node_modules',
+    'bower_components',
+  ];
+}
