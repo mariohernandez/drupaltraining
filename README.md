@@ -10,7 +10,7 @@ This is a DDEV-based Drupal development environment which automates the followin
 ## Let's start
 
 ### 1. Software requirements
-* [Docker & DDEV-Local](https://ddev.readthedocs.io/en/stable/#installation)
+* Install [Docker & DDEV-Local](https://ddev.readthedocs.io/en/stable/#installation)
 
 ### 2. Clone the repo:
 ```
@@ -27,6 +27,7 @@ cd drupaltraining
 ```
 ddev start
 ```
+_This will take a few minutes.  If you encounter any errors, run_ `ddev restart`
 
 Done!  🙌
 
