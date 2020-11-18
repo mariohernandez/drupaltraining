@@ -1,17 +1,23 @@
 # Drupal training
-This is a DDEV-based Drupal development environment.
+This is a DDEV-based Drupal development environment which automates the following tasks:
 
-### Software requirements
+* Install theme-required version of node
+* Composer install to download Drupal core, modules, drush, and other dependencies
+* Import custom database for Drupal
+* Clear caches
+* Launches a fully built Drupal site
+
+## Let's start
+
+### 1. Software requirements
 * [Docker & DDEV-Local](https://ddev.readthedocs.io/en/stable/#installation)
 
-## Setup
-
-### Clone the repo:
+### 2. Clone the repo:
 ```
 git clone git@github.com:mariohernandez/drupaltraining.git
 ```
 
-### Build the project:
+### 3. Build the project:
 Ensure Docker is running before proceeding.
 
 ```
@@ -21,14 +27,10 @@ cd drupaltraining
 ```
 ddev start
 ```
-This will run all the necessary tasks to build your development environment:
-* Install theme-required version of node
-* Composer install to download Drupal core, modules, drush, and other dependencies
-* Import custom database for Drupal
-* Update database
-* Clear caches
-* Launch new site
 
+Done!  🙌
+
+---
 ### Login to Drupal
 http://drupaltraining.ddev.site/user/
 
