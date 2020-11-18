@@ -1,5 +1,8 @@
 # Drupal training
-An automated DDEV-based Drupal development environment.
+This is a DDEV-based Drupal development environment.
+
+### Software requirements
+* [Docker & DDEV-Local](https://ddev.readthedocs.io/en/stable/#installation)
 
 ## Setup
 
