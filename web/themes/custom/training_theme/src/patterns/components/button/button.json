@@ -1,4 +1,7 @@
 {
-  "text": "Button",
-  "modifier": ""
+  "button": {
+    "text": "Hi, I'm a button",
+    "url": "",
+    "modifier": ""
+  }
 }

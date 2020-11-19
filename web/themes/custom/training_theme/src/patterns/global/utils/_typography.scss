@@ -2,7 +2,7 @@
 //
 // Typography variables.
 
-$font-sans: 'Lato', 'Arial', sans-serif;
+$font-sans: 'Open Sans', sans-serif;
 $font-serif: 'Georgia', serif;
 
 @mixin font-stack-primary {
@@ -31,4 +31,30 @@ $font-italic: italic;
     // 56px.
     line-height: 1.16;
   }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  @include heading1;
+}
+
+h2 {
+  @include heading2;
+}
+
+h3 {
+  @include heading3;
+}
+
+h4 {
+  @include heading4;
 }

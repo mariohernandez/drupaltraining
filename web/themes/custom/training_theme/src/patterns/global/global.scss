@@ -38,15 +38,15 @@
 
 html {
   @include font-stack-primary;
-  font-size: 100%;
-  line-height: 1.15;
-  box-sizing: border-box;
+  font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
 }
 
-// Sections.
 body {
+  box-sizing: border-box;
   margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 // Render the `main` element consistently in IE11.
@@ -150,7 +150,6 @@ button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
-  border-style: none;
   padding: 0;
 }
 

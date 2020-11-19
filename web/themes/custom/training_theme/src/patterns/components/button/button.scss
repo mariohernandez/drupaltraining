@@ -1,45 +1,33 @@
-// Buttons
-//
-// This is the button component. It provides basic styles for buttons throughout the site.
-
-// Import site utilities.
+// Import site utilities
 @import '../../global/utils/init';
 
 .button {
-  background-color: $color-tradewind;
-  border: 1px solid transparent;
-  border-radius: 0;
-  cursor: pointer;
+  background-color: $color-navy-blue;
+  border: 2px solid $color-navy-blue;
+  color: $color-white;
   display: inline-block;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-align: center;
-  transition: background-color $transition, color $transition;
+  line-height: 1.3;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
 
+  // Hover and focus states for base button
   &:hover,
-  &:active {
-    background-color: darken($color-tradewind, 15);
+  &:focus {
     color: $color-white;
   }
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-}
+  // Styles for white button with gray outline.
+  &.button--ghost {
+    background-color: transparent;
+    border: 2px solid $color-gray-dark;
+    color: $color-gray-dark;
+    padding: 8px 30px;
 
-.button--primary {
-  background-color: $color-white;
-  border: 3px solid $color-tradewind;
-  border-radius: 3px;
-  color: $color-tradewind;
-  text-decoration: none;
-
-  &:hover,
-  &:active {
-    background-color: rgba($color-white, 0.85);
-    border: 3px solid darken($color-tradewind, 15);
-    color: darken($color-tradewind, 15);
-    text-decoration: none;
+    // Hover and focus styles for ghost button.
+    &:hover,
+    &:focus {
+      color: $color-gray-dark;
+    }
   }
 }

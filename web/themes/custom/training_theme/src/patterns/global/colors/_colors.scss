@@ -12,15 +12,27 @@ $color-white: #fff;
 $color-black: #1b2b34;
 
 // Primary.
-$color-mandy: #ec5f67;
-$color-tan-hide: #f99157;
-$color-saffron-mango: #fac863;
-$color-de-york: #99c794;
-$color-tradewind: #5fb3b3;
-$color-danube: #69c;
+$color-navy-blue: #003954;
 
 // Grays.
-$color-gray-dk: #343d46;
-$color-gray-mid: #4f5b66;
+$color-gray: #808080;
+$color-gray-light: #eeeeee;
+$color-gray-med: #cccccc;
+$color-gray-dark: #444444;
+$color-gray-darker: #131313;
 $color-gray-lt: #65737e;
 $color-gray-xlt: #a7adba;
+
+// Misc
+$color-catskill-white: #edf2f7;
+$color-error: #f00;
+$color-success: #089e00;
+$color-warning: #fff664;
+$color-info: #000db5;
+$color-gray-mid:  #cccccc;
+$color-gray-lt: #444444;
+$color-gray-xlt: #131313;
+$color-tan-hide: #f99157;
+$color-gray-dk: #444444;
+$color-tradewind: #5fb3b3;
+$color-danube: $color-navy-blue;
