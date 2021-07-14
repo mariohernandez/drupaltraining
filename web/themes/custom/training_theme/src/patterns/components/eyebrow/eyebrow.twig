@@ -1,7 +1,5 @@
 {{ attach_library('training_theme/eyebrow') }}
 
-<div class="eyebrow {{ modifier }}" {{ extra_attributes }}>
-  <p class="eyebrow__text">
-    {{ text }}
-  </p>
+<div class="eyebrow{{ modifier ? ' ' ~ modifier }}">
+  {{ text }}
 </div>

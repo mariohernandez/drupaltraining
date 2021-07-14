@@ -165,7 +165,7 @@ rules:
   declaration-no-important: true
 
   # Specify a blacklist of disallowed property and value pairs within declarations.
-  # https://stylelint.io/user-guide/rules/declaration-property-value-blacklist/
+  # https://stylelint.io/user-guide/rules/declaration-property-value-disallowed-list/
   declaration-property-value-disallowed-list:
     # Prefer the terser border: 0 over border: none.
     //bborder\b/:

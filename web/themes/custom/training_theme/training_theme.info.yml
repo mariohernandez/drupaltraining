@@ -1,4 +1,4 @@
-# Generated on 2020-06-14 using generator-mc-d8-theme 2.3.0
+# Generated on 2021-07-14 using generator-mc-d8-theme 2.4.0
 
 # Drupal's .info.yml files allow themers to easily specify some of the static
 # properties of your theme. Properties such as its name, libraries of style
@@ -11,9 +11,9 @@
 
 name: Training Theme
 type: theme
-description: Custom Drupal 8 theme for Drupal training.
+description: A custom drupal 9 theme used during training workshop.
 package: Other
-core: 8.x
+core_version_requirement: ^8 || ^9
 # Classy vs. Stable as a base theme: https://www.lullabot.com/articles/a-tale-of-two-base-themes-in-drupal-8-core
 base theme: stable
 
@@ -48,9 +48,9 @@ libraries:
 # to reference .twig files in your sass/ directory by using the Twig namespace:
 # @training_theme
 # See https://www.drupal.org/project/components for more information.
-component-libraries:
-  training_theme:
-    paths:
+components:
+  namespaces:
+    training_theme:
       - src/patterns/global
       - src/patterns/components
       - src/patterns/pages

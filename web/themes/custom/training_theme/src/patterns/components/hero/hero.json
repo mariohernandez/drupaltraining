@@ -1,0 +1,15 @@
+{
+  "image": "<img src='https://source.unsplash.com/DOoYFgTQWfs/1900x700' alt='Books on computer' />",
+  "heading": {
+    "heading_level": "1",
+    "modifier": "hero__title",
+    "text": "Today's trends",
+    "url": ""
+  },
+  "cta": {
+    "text": "Get started",
+    "url": "",
+    "modifier": "hero__cta"
+  },
+  "modifier": ""
+}

@@ -1,0 +1,29 @@
+{{ attach_library('training_theme/hero')}}
+
+<section class="hero{{ modifier ? ' ' ~ modifier }}
+  {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
+  {% if image %}
+    <div class="hero__media">
+      {{ image }}
+    </div>
+  {% endif %}
+
+  <div class="hero__content">
+    {% if heading %}
+      {%
+        include '@training_theme/heading/heading.twig' with {
+          "heading": heading
+        } only
+      %}
+    {% endif %}
+
+    {% if cta %}
+      {%
+        include '@training_theme/button/button.twig' with {
+          "button": cta,
+        } only
+      %}
+    {% endif %}
+  </div>
+</section>

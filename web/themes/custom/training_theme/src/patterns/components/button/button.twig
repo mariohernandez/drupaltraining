@@ -1,3 +1,5 @@
+{{ attach_library('training_theme/button') }}
+
 {% if button.url %}
   <a href="{{ button.url }}" class="button{{ button.modifier ? ' ' ~ button.modifier }}">
     {{ button.text }}

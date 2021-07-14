@@ -34,15 +34,15 @@ button:
     component:
       dist/css/button.css: {}
 
-eyebrow:
-  css:
-    component:
-      dist/css/eyebrow.css: {}
-
 heading:
   css:
     component:
       dist/css/heading.css: {}
+
+hero:
+  css:
+    component:
+      dist/css/hero.css: {}
 
 message:
   css:
