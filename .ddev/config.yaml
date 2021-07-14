@@ -17,7 +17,6 @@ hooks:
     - composer: install
     - exec: /var/www/html/db/import-db.sh
     - exec: drush updb -y
-    - exec: drush cim -y
     - exec-host: cp web/sites/example.development.services.yml web/sites/development.services.yml
     - exec-host: mkdir -p web/sites/default/files/images
     - exec-host: chmod -R ugo+w web/sites/default/files/images/

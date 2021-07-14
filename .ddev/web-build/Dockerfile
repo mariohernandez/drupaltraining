@@ -3,7 +3,7 @@ ARG BASE_IMAGE
 FROM $BASE_IMAGE
 
 ENV NVM_DIR=/usr/local/nvm
-ENV NODE_DEFAULT_VERSION=v14.4.0
+ENV NODE_DEFAULT_VERSION=v14.16.1
 
 RUN curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh -o install_nvm.sh
 RUN mkdir -p $NVM_DIR && bash install_nvm.sh
