@@ -30,7 +30,7 @@
     "@babel/preset-env": "^7.6.3",
     "@pattern-lab/core": "^5.15.0",
     "@pattern-lab/engine-twig-php": "^5.15.0",
-    "@pattern-lab/uikit-workshop": "^5.15.0",
+    "@pattern-lab/uikit-workshop": "^5.17.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "generator-mc-d8-theme": "^2.4.0",
@@ -43,7 +43,7 @@
     "gulp-imagemin": "^6.1.1",
     "gulp-order": "^1.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylelint": "^11.0.0",
     "prettier-eslint": "^9.0.1",
@@ -51,6 +51,6 @@
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-scss": "^3.19.0",
-    "yo": "^4.2.0"
+    "yo": "^4.3.1"
   }
 }
